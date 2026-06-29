@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Coding Review Project</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:90%;
+    max-width:900px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    color:white;
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+p{
+    font-size:1.1rem;
+    margin-bottom:35px;
+    color:#dbeafe;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    width:180px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.btn-group{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    padding:14px 35px;
+    border-radius:12px;
+    font-size:18px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.register{
+    background:#22c55e;
+}
+
+.register:hover{
+    background:#16a34a;
+}
+
+.login{
+    background:#3b82f6;
+}
+
+.login:hover{
+    background:#2563eb;
+}
+
+.footer{
+    margin-top:30px;
+    color:#bfdbfe;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🛡️ Secure Coding Review Project</h1>
+
+<p>
+Analyze vulnerable code, identify security flaws,
+perform vulnerability assessment, and apply secure coding practices.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>💉 SQL Injection</h3>
+<p>High Risk</p>
+</div>
+
+<div class="card">
+<h3>⚠️ XSS</h3>
+<p>Critical Risk</p>
+</div>
+
+<div class="card">
+<h3>🔑 Password Security</h3>
+<p>Authentication</p>
+</div>
+
+<div class="card">
+<h3>🛠️ Code Review</h3>
+<p>Security Audit</p>
+</div>
+
+</div>
+
+<div class="btn-group">
+
+<a href="/register" class="btn register">
+📝 Register
+</a>
+
+<a href="/login" class="btn login">
+🔐 Login
+</a>
+
+</div>
+
+<div class="footer">
+Cyber Security Internship - Task 3: Secure Coding Review
+</div>
+
+</div>
+
+</body>
+</html>

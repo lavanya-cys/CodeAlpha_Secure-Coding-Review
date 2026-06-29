@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Security Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+    min-height:100vh;
+    color:white;
+    padding:40px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    background:#22c55e;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#16a34a;
+}
+
+a{
+    color:#93c5fd;
+    text-decoration:none;
+}
+
+.result{
+    margin-top:20px;
+    padding:15px;
+    background:rgba(255,255,255,0.1);
+    border-radius:10px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>🛡 Security Dashboard</h1>
+
+<p>Welcome {{ username }}</p>
+
+<br>
+
+<a href="/logout">Logout</a>
+
+</div>
+
+<div class="card">
+
+<h2>🔍 Search Portal</h2>
+
+<p>
+Search functionality for vulnerability testing
+</p>
+
+<form action="/search" method="POST">
+
+<input
+type="text"
+name="search"
+placeholder="Search here..."
+required>
+
+<button type="submit">
+Search
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
